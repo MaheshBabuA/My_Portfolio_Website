@@ -15,14 +15,14 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
+  fastapi,
+  flask,
+  socketio,
+  vercel,
+  render,
+  langgraph,
+  mcp,
 } from "../assets";
 
 export const navLinks = [
@@ -40,226 +40,199 @@ export const navLinks = [
   },
 ];
 
+// TODO: Icons below don't semantically match the new titles — swap later with proper icons:
+//   "AI Orchestration" needs a dedicated icon (currently uses `web`)
+//   "Systems Architecture" needs a dedicated icon (currently uses `backend`)
+//   "Full-Stack Development" needs a dedicated icon (currently uses `mobile`)
+//   "Founder & Builder" needs a dedicated icon (currently uses `creator`)
 const services = [
   {
-    title: "Web Developer",
+    title: "AI Orchestration",
     icon: web,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
-    title: "Backend Developer",
+    title: "Systems Architecture",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Full-Stack Development",
+    icon: mobile,
+  },
+  {
+    title: "Founder & Builder",
     icon: creator,
   },
 ];
 
+// TODO: Missing icon assets — need to source from simpleicons.org or svgl.app:
+//   - FastAPI
+//   - Flask
+//   - Socket.io
+//   - LangGraph
+//   - MCP
+//   - Vercel
+//   - Render
 const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
   {
     name: "TypeScript",
     icon: typescript,
   },
   {
-    name: "React JS",
+    name: "React / Next.js",
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "Node.js / Express",
+    icon: nodejs,
+  },
+  {
+    name: "FastAPI",
+    icon: fastapi,
+  },
+  {
+    name: "Flask",
+    icon: flask,
+  },
+  {
+    name: "Socket.io",
+    icon: socketio,
   },
   {
     name: "Tailwind CSS",
     icon: tailwind,
   },
   {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
+    name: "Git",
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "Vercel",
+    icon: vercel,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "Render",
+    icon: render,
+  },
+  {
+    name: "LangGraph",
+    icon: langgraph,
+  },
+  {
+    name: "MCP",
+    icon: mcp,
   },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Founder & CEO",
+    company_name: "Zenthoryx Group",
+    icon: web,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "April 2026 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Founded a private limited holding company, UDYAM certified, for two ventures.",
+      "Leading ShaadiSync, an AI-powered wedding-planning OS for Indian couples.",
+      "Leading LevelUpCoders, an edtech venture focused on coding education.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Hackathon Builder",
+    company_name: "SOLARIS X, RNSIT",
+    icon: backend,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "April 2026",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Built Quorix MCP, an autonomous cybersecurity threat-intelligence system using FastMCP, Groq Llama 3.3 70B, and the AbuseIPDB API.",
+      "Received positive Phase 1 judge feedback in the MCP-Based Systems track.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Hackathon Builder",
+    company_name: "Hack4Soc 3.0, RVCE",
+    icon: mobile,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "TODO: confirm date",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Built an AI Emergency Government Navigator with team Zero Latency — deterministic pseudo-RAG, keyword trie routing, stealth-mode UI, PWA offline layer.",
+      "Delivered on a 13-day execution window.",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: "Team Lead",
+    company_name: "WEBATHON 2026, RajaRajeswari College",
+    icon: creator,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "TODO: confirm date",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Led a team building a hospital appointment platform with real-time Socket.io flow, QR check-in, and a LangChain RAG assistant.",
+      "Advanced past Round 1, scoring 41.3/50.",
     ],
   },
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
-
+// TODO: image fields need real screenshots — replace null with imported images once supplied.
+//       Works.jsx has been updated to render a placeholder block when image is falsy.
 const projects = [
   {
-    name: "Car Rent",
+    name: "Quorix MCP",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Autonomous cybersecurity threat-intelligence system built for the SOLARIS X hackathon's MCP-Based Systems track. Uses FastMCP, Groq Llama 3.3 70B, and the AbuseIPDB API behind a Flask bridge.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
+      { name: "FastMCP", color: "blue-text-gradient" },
+      { name: "Groq", color: "green-text-gradient" },
+      { name: "cybersecurity", color: "pink-text-gradient" },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: null, // TODO: add screenshot for Quorix MCP
+    source_code_link: "TODO", // TODO: add GitHub URL
   },
   {
-    name: "Job IT",
+    name: "AI Emergency Government Navigator",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Deterministic pseudo-RAG system with keyword trie routing, a stealth-mode UI, and a PWA offline layer, built in 13 days for Hack4Soc 3.0.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
+      { name: "RAG", color: "blue-text-gradient" },
+      { name: "PWA", color: "green-text-gradient" },
+      { name: "hackathon", color: "pink-text-gradient" },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: null, // TODO: add screenshot for AI Emergency Government Navigator
+    source_code_link: "TODO", // TODO: add GitHub URL
   },
   {
-    name: "Trip Guide",
+    name: "Hospital Appointment Platform",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Real-time appointment and triage platform with Socket.io live updates, QR check-in, and a LangChain RAG assistant, built for WEBATHON 2026.",
     tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
+      { name: "Socket.io", color: "blue-text-gradient" },
+      { name: "LangChain", color: "green-text-gradient" },
+      { name: "RAG", color: "pink-text-gradient" },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: null, // TODO: add screenshot for Hospital Appointment Platform
+    source_code_link: "TODO", // TODO: add GitHub URL
+  },
+  {
+    name: "AI Coding Interview Simulator",
+    description:
+      "Next.js + FastAPI app with a Monaco-based live code editor, paired with a separate Node.js/Express + OpenAI backend generating LeetCode-style questions on demand.",
+    tags: [
+      { name: "Next.js", color: "blue-text-gradient" },
+      { name: "FastAPI", color: "green-text-gradient" },
+      { name: "OpenAI", color: "pink-text-gradient" },
+    ],
+    image: null, // TODO: add screenshot for AI Coding Interview Simulator
+    source_code_link: "TODO", // TODO: add GitHub URL
+  },
+  {
+    name: "Drive2Thrive",
+    description:
+      "Freelance site for a career consultancy — vanilla HTML/CSS/JS with GSAP animations, Web3Forms contact routing, and a full DNS migration from GoDaddy to Vercel.",
+    tags: [
+      { name: "GSAP", color: "blue-text-gradient" },
+      { name: "freelance", color: "pink-text-gradient" },
+    ],
+    image: null, // TODO: add screenshot for Drive2Thrive
+    source_code_link: "TODO", // TODO: add GitHub URL or live link
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };

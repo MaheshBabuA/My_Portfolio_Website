@@ -29,7 +29,7 @@ const Computers = ({ isMobile }) => {
   );
 };
 
-const ComputersCanvas = () => {
+const ComputersCanvas = ({ onInteract }) => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -66,6 +66,7 @@ const ComputersCanvas = () => {
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
+          onStart={onInteract}
         />
         <Computers isMobile={isMobile} />
       </Suspense>

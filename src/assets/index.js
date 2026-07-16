@@ -20,6 +20,13 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import fastapi from "./tech/fastapi.png";
+import flask from "./tech/flask.png";
+import socketio from "./tech/socketio.png";
+import vercel from "./tech/vercel.png";
+import render from "./tech/render.png";
+import langgraph from "./tech/langgraph.png";
+import mcp from "./tech/mcp.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -52,6 +59,13 @@ export {
   tailwind,
   typescript,
   threejs,
+  fastapi,
+  flask,
+  socketio,
+  vercel,
+  render,
+  langgraph,
+  mcp,
   meta,
   shopify,
   starbucks,

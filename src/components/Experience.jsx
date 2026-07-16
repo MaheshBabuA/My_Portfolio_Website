@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -11,6 +11,7 @@ import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
+import TimelineRider from "./TimelineRider";
 
 const ExperienceCard = ({ experience }) => {
   return (
@@ -57,6 +58,8 @@ const ExperienceCard = ({ experience }) => {
 };
 
 const Experience = () => {
+  const timelineRef = useRef(null);
+
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -68,7 +71,7 @@ const Experience = () => {
         </h2>
       </motion.div>
 
-      <div className='mt-20 flex flex-col'>
+      <div ref={timelineRef} className='mt-20 flex flex-col relative'>
         <VerticalTimeline>
           {experiences.map((experience, index) => (
             <ExperienceCard
@@ -77,6 +80,7 @@ const Experience = () => {
             />
           ))}
         </VerticalTimeline>
+        <TimelineRider containerRef={timelineRef} />
       </div>
     </>
   );
