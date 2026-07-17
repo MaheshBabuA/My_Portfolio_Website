@@ -29,15 +29,6 @@ import langgraph from "./tech/langgraph.png";
 import mcp from "./tech/mcp.png";
 import python from "./tech/python.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
-
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
-
 export {
   logo,
   backend,
@@ -68,11 +59,4 @@ export {
   langgraph,
   mcp,
   python,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
 };
