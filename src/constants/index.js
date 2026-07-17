@@ -23,6 +23,7 @@ import {
   render,
   langgraph,
   mcp,
+  python,
 } from "../assets";
 
 export const navLinks = [
@@ -120,6 +121,22 @@ const technologies = [
   {
     name: "MCP",
     icon: mcp,
+  },
+  {
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "HTML",
+    icon: html,
+  },
+  {
+    name: "CSS",
+    icon: css,
+  },
+  {
+    name: "GitHub",
+    icon: git,
   },
 ];
 

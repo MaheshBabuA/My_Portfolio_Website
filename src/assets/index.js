@@ -27,6 +27,7 @@ import vercel from "./tech/vercel.png";
 import render from "./tech/render.png";
 import langgraph from "./tech/langgraph.png";
 import mcp from "./tech/mcp.png";
+import python from "./tech/python.svg";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -66,6 +67,7 @@ export {
   render,
   langgraph,
   mcp,
+  python,
   meta,
   shopify,
   starbucks,
