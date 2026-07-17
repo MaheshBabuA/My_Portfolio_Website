@@ -148,14 +148,16 @@ const experiences = [
     ],
   },
   {
-    title: "Hackathon Builder",
-    company_name: "Hack4Soc 3.0, RVCE",
-    icon: mobile,
+    title: "AI Intern",
+    company_name: "NoviTech R&D Pvt. Ltd.",
+    icon: backend,
     iconBg: "#383E56",
-    date: "TODO: confirm date",
+    date: "March 2025 - April 2025",
     points: [
-      "Built an AI Emergency Government Navigator with team Zero Latency — deterministic pseudo-RAG, keyword trie routing, stealth-mode UI, PWA offline layer.",
-      "Delivered on a 13-day execution window.",
+      "Designed a Moving Object Detection System for real-time object tracking using computer vision.",
+      "Developed an AI-powered Smart Attendance System using facial recognition.",
+      "Built a Face Emotion Recognition model using deep learning techniques.",
+      "Built a Hand Gesture Recognition System enabling gesture-based human-computer interaction.",
     ],
   },
   {
@@ -163,7 +165,7 @@ const experiences = [
     company_name: "WEBATHON 2026, RajaRajeswari College",
     icon: creator,
     iconBg: "#E6DEDD",
-    date: "TODO: confirm date",
+    date: "April 2026",
     points: [
       "Led a team building a hospital appointment platform with real-time Socket.io flow, QR check-in, and a LangChain RAG assistant.",
       "Advanced past Round 1, scoring 41.3/50.",
