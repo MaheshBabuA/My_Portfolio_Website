@@ -13,6 +13,11 @@
   color-scheme: dark;
 }
 
+html, body, #root {
+  background-color: #050816;
+  min-height: 100%;
+}
+
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;
