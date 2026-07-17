@@ -27,7 +27,7 @@ import vercel from "./tech/vercel.png";
 import render from "./tech/render.png";
 import langgraph from "./tech/langgraph.png";
 import mcp from "./tech/mcp.png";
-import python from "./tech/python.svg";
+import python from "./tech/python.png";
 
 export {
   logo,
